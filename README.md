@@ -8,3 +8,11 @@ First results on classification of psychological deseases indicate that random a
 This indicates that model selection has to be evaluated from classifying the root causes of the desease types as random or generative.
 We like to confirm these findings in a preliminary study of heart desease statistics, and try to find a general trend for random or generative model selection for illness probability prediction.
 
+# Authours
+
+Betül Yurtman und Dr. Alexej Schelle
+
+
+
+
+
