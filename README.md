@@ -137,4 +137,7 @@ apple-touch-icon.png (180×180)
 🛠️ Favicon-Generatoren  
 
 https://favicon.io/  
-https://realfavicongenerator.net/  
+https://realfavicongenerator.net/
+
+🏷️ About Contributors
+Interested contributors may submit ideas to ejp@krealix.de. Discussion and short lectures can be arranged at https://calendly.com/alexej-schelle/.
