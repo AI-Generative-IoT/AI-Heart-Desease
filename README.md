@@ -1,169 +1,140 @@
-❤️🧠 AI-Heart-Desease
+❤️🧠 AI-Heart-Desease  
+
 Modellentwicklung für die Analyse von Herzerkrankungen
-👥 Autoren
 
-Betül Yurtman
-Dr. Alexej Schelle
+👥 Autoren  
 
-🧾 1. Zusammenfassung (Abstract)
+Betül Yurtman   
+Dr. Alexej Schelle  
 
-Das Projekt AI-Heart-Desease untersucht systematisch die Eignung unterschiedlicher prädiktiver Modellierungsansätze zur Klassifikation und Analyse von Ursachen von Herzerkrankungen. Der Fokus liegt auf dem Vergleich zwischen zufallsbasierten (randomisierten) Modellen und neuronalen Netzwerken als generative Modelle.
+🧾 1. Zusammenfassung (Abstract)  
 
-Basierend auf früheren Erkenntnissen aus der Analyse psychologischer Erkrankungen wird überprüft, ob auch bei Herzerkrankungen eine komplementäre Leistungsfähigkeit dieser Modellklassen existiert. Ziel ist es, allgemeine Kriterien für eine fundierte Modellselektion in der medizinischen Risiko- und Wahrscheinlichkeitsvorhersage abzuleiten.
+Das Projekt AI-Heart-Desease untersucht systematisch die Eignung unterschiedlicher prädiktiver Modellierungsansätze zur Klassifikation und Analyse von Ursachen von Herzerkrankungen. Der Fokus liegt auf dem Vergleich zwischen zufallsbasierten (randomisierten) Modellen und neuronalen Netzwerken als generative Modelle.   
 
-🎯 2. Projektziele
+Basierend auf früheren Erkenntnissen aus der Analyse psychologischer Erkrankungen wird überprüft, ob auch bei Herzerkrankungen eine komplementäre Leistungsfähigkeit dieser Modellklassen existiert. Ziel ist es, allgemeine Kriterien für eine fundierte Modellselektion in der medizinischen Risiko- und Wahrscheinlichkeitsvorhersage abzuleiten.  
 
-📊 Statistische Analyse von Ursachen und Risikofaktoren von Herzerkrankungen
+🎯 2. Projektziele  
 
-🧠 Entwicklung neuronaler Netzwerke zur generativen Mustererkennung
+📊 Statistische Analyse von Ursachen und Risikofaktoren von Herzerkrankungen  
+🧠 Entwicklung neuronaler Netzwerke zur generativen Mustererkennung  
+🎲 Einsatz von Zufalls- und Baseline-Modellen als Referenz  
+📈 Untersuchung der Skalierung der Vorhersagegenauigkeit  
+🔄 Vergleich mit Ergebnissen aus psychologischen Krankheitsmodellen  
+🧭 Ableitung allgemeiner Modellselektionsstrategien  
 
-🎲 Einsatz von Zufalls- und Baseline-Modellen als Referenz
+🗂️ 3. Datenbasis und Merkmalsgruppen  
 
-📈 Untersuchung der Skalierung der Vorhersagegenauigkeit
+📁 Datentypen  
+👤 Demografie (Alter, Geschlecht)  
+❤️ Physiologie (Blutdruck, Cholesterin, Herzfrequenz)  
+🚬 Lebensstil (Rauchen, Aktivität, Ernährung)  
+🏥 Klinische Parameter und Diagnosen  
+⚙️ Vorverarbeitung  
 
-🔄 Vergleich mit Ergebnissen aus psychologischen Krankheitsmodellen
+Normalisierung numerischer Werte  
+Umgang mit fehlenden Daten  
+Kodierung kategorialer Merkmale  
 
-🧭 Ableitung allgemeiner Modellselektionsstrategien
+🧩 4. Modellarchitekturen  
 
-🗂️ 3. Datenbasis und Merkmalsgruppen
-📁 Datentypen
+🎲 4.1 Zufalls- und Baseline-Modelle  
 
-👤 Demografie (Alter, Geschlecht)
+Zufallsmodelle dienen als statistische Nullhypothese:  
+Zufällige Klassifikation unter Berücksichtigung der Klassenverteilung  
+Einfache probabilistische Modelle mit minimalen Annahmen  
 
-❤️ Physiologie (Blutdruck, Cholesterin, Herzfrequenz)
+➡️ Ziel: Bewertung, ob Krankheitsmuster signifikant über Zufall hinausgehen.  
 
-🚬 Lebensstil (Rauchen, Aktivität, Ernährung)
+🧠 4.2 Neuronale Netzwerke (Generative Modelle)  
 
-🏥 Klinische Parameter und Diagnosen
+Neuronale Netze modellieren komplexe Abhängigkeiten:  
 
-⚙️ Vorverarbeitung
+Nichtlineare Feature-Interaktionen  
+Latente Repräsentationen von Risikofaktoren  
+Adaptive Gewichtsanpassung durch Training  
 
-Normalisierung numerischer Werte
+➡️ Einsatz von Regularisierung und Validierung zur Vermeidung von Overfitting.  
 
-Umgang mit fehlenden Daten
+📏 5. Evaluationsmethoden  
 
-Kodierung kategorialer Merkmale
+📊 Metriken  
+✔️ Genauigkeit (Accuracy)  
+🎯 Präzision & Recall  
+🧮 F1-Score  
+🔀 Konfusionsmatrix  
+🔁 Validierung  
 
-🧩 4. Modellarchitekturen
-🎲 4.1 Zufalls- und Baseline-Modelle
+Kreuzvalidierung  
 
-Zufallsmodelle dienen als statistische Nullhypothese:
+Analyse der Stabilität über Subgruppen  
 
-Zufällige Klassifikation unter Berücksichtigung der Klassenverteilung
+🔍 6. Vorläufige Ergebnisse  
 
-Einfache probabilistische Modelle mit minimalen Annahmen
+❌ Zufalls- und neuronale Modelle erzielen selten gleichzeitig hohe Genauigkeiten  
+🧠 Strukturierte Krankheitsbilder profitieren stark von neuronalen Netzen  
+🎲 Andere Klassen zeigen nur geringe Abweichung von Zufallsmodellen  
+➡️ Hinweis auf unterschiedliche Grade struktureller Vorhersagbarkeit
 
-➡️ Ziel: Bewertung, ob Krankheitsmuster signifikant über Zufall hinausgehen.
+💬 7. Diskussion  
 
-🧠 4.2 Neuronale Netzwerke (Generative Modelle)
+Die Ergebnisse legen nahe, Herzerkrankungen nach ihrer Modellierbarkeit zu unterscheiden:  
 
-Neuronale Netze modellieren komplexe Abhängigkeiten:
+🎲 Zufallsdominierte Erkrankungen – hohe Heterogenität, geringe Struktur  
+🧠 Generativ-dominierte Erkrankungen – komplexe, aber lernbare Muster  
+➡️ Konsequenz: adaptive und krankheitsspezifische Modellwahl  
 
-Nichtlineare Feature-Interaktionen
+🚀 8. Fazit und Ausblick  
 
-Latente Repräsentationen von Risikofaktoren
+Das Projekt bestätigt, dass Modellselektion ein kritischer Faktor in medizinischer KI ist. Eine pauschale Anwendung neuronaler Netze ist nicht immer optimal.  
 
-Adaptive Gewichtsanpassung durch Training
+🔮 Zukünftige Arbeiten  
 
-➡️ Einsatz von Regularisierung und Validierung zur Vermeidung von Overfitting.
+Erweiterung der Datensätze  
+Hybride und Ensemble-Modelle  
+Verbesserte Interpretierbarkeit (Explainable AI)  
 
-📏 5. Evaluationsmethoden
-📊 Metriken
+🏷️ Schlüsselwörter  
 
-✔️ Genauigkeit (Accuracy)
+Herzerkrankungen · Maschinelles Lernen · Neuronale Netze · Zufallsmodelle · Medizinische KI  
 
-🎯 Präzision & Recall
+🔗 9. Ressourcen & Links  
 
-🧮 F1-Score
+📂 Code & Projekt  
 
-🔀 Konfusionsmatrix
+GitHub: https://github.com/your-org/AI-Heart-Desease  
 
-🔁 Validierung
+📊 Datensätze  
 
-Kreuzvalidierung
+UCI Heart Disease Dataset: https://archive.ics.uci.edu/ml/datasets/Heart+Disease  
 
-Analyse der Stabilität über Subgruppen
+Kaggle Heart Disease Dataset: https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset  
 
-🔍 6. Vorläufige Ergebnisse
+📚 Medizinische Quellen  
 
-❌ Zufalls- und neuronale Modelle erzielen selten gleichzeitig hohe Genauigkeiten
+WHO – Herz-Kreislauf-Erkrankungen: https://www.who.int/health-topics/cardiovascular-diseases  
+American Heart Association: https://www.heart.org/  
 
-🧠 Strukturierte Krankheitsbilder profitieren stark von neuronalen Netzen
+🧠 ML-Frameworks  
 
-🎲 Andere Klassen zeigen nur geringe Abweichung von Zufallsmodellen
+TensorFlow: https://www.tensorflow.org/  
+PyTorch: https://pytorch.org/  
+Scikit-learn: https://scikit-learn.org/  
 
-➡️ Hinweis auf unterschiedliche Grade struktureller Vorhersagbarkeit.
+🎨 10. Icons & Favicon-Konzept  
 
-💬 7. Diskussion
+❤️🧠 Projekt-Icon  
 
-Die Ergebnisse legen nahe, Herzerkrankungen nach ihrer Modellierbarkeit zu unterscheiden:
+Herzform mit integrierten neuronalen Knoten  
+Farbkonzept: Rot (Medizin) + Blau (KI)  
 
-🎲 Zufallsdominierte Erkrankungen – hohe Heterogenität, geringe Struktur
+📐 Empfohlene Favicon-Dateien  
 
-🧠 Generativ-dominierte Erkrankungen – komplexe, aber lernbare Muster
+favicon.ico (16×16, 32×32)  
+favicon-32x32.png  
+favicon-192x192.png  
+apple-touch-icon.png (180×180)  
 
-➡️ Konsequenz: adaptive und krankheitsspezifische Modellwahl.
+🛠️ Favicon-Generatoren  
 
-🚀 8. Fazit und Ausblick
-
-Das Projekt bestätigt, dass Modellselektion ein kritischer Faktor in medizinischer KI ist. Eine pauschale Anwendung neuronaler Netze ist nicht immer optimal.
-
-🔮 Zukünftige Arbeiten
-
-Erweiterung der Datensätze
-
-Hybride und Ensemble-Modelle
-
-Verbesserte Interpretierbarkeit (Explainable AI)
-
-🏷️ Schlüsselwörter
-
-Herzerkrankungen · Maschinelles Lernen · Neuronale Netze · Zufallsmodelle · Medizinische KI
-
-🔗 9. Ressourcen & Links
-📂 Code & Projekt
-
-GitHub: https://github.com/your-org/AI-Heart-Desease
-
-📊 Datensätze
-
-UCI Heart Disease Dataset: https://archive.ics.uci.edu/ml/datasets/Heart+Disease
-
-Kaggle Heart Disease Dataset: https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
-
-📚 Medizinische Quellen
-
-WHO – Herz-Kreislauf-Erkrankungen: https://www.who.int/health-topics/cardiovascular-diseases
-
-American Heart Association: https://www.heart.org/
-
-🧠 ML-Frameworks
-
-TensorFlow: https://www.tensorflow.org/
-
-PyTorch: https://pytorch.org/
-
-Scikit-learn: https://scikit-learn.org/
-
-🎨 10. Icons & Favicon-Konzept
-❤️🧠 Projekt-Icon
-
-Herzform mit integrierten neuronalen Knoten
-
-Farbkonzept: Rot (Medizin) + Blau (KI)
-
-📐 Empfohlene Favicon-Dateien
-
-favicon.ico (16×16, 32×32)
-
-favicon-32x32.png
-
-favicon-192x192.png
-
-apple-touch-icon.png (180×180)
-
-🛠️ Favicon-Generatoren
-
-https://favicon.io/
-
-https://realfavicongenerator.net/
+https://favicon.io/  
+https://realfavicongenerator.net/  
