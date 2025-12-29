@@ -1,4 +1,4 @@
-❤️🧠 AI-Heart-Desease  
+❤️🧠 AI-Heart-Disease  
 
 Modellentwicklung für die Analyse von Herzerkrankungen
 
