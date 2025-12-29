@@ -1,134 +1,143 @@
-Zusammenfassung (Abstract)
+❤️🧠 AI-Heart-Desease
+Modellentwicklung für die Analyse von Herzerkrankungen
+👥 Autoren
 
-Das Projekt AI-Heart-Desease untersucht die Eignung unterschiedlicher prädiktiver Modellierungsansätze zur Klassifikation und Analyse von Ursachen von Herzerkrankungen. Ziel ist es, die Skalierung der Vorhersagegenauigkeit in Abhängigkeit von der Modellwahl zu analysieren, insbesondere im Vergleich zwischen zufallsbasierten (randomisierten) Modellen und standardmäßigen neuronalen Netzwerken als generative Ansätze.
+Betül Yurtman
+Dr. Alexej Schelle
 
-Aus früheren Ergebnissen zur Klassifikation psychologischer Erkrankungen geht hervor, dass Zufallsmodelle und neuronale Netze selten parallel hohe Genauigkeiten erreichen, sondern jeweils in unterschiedlichen Szenarien dominieren. Diese Arbeit überträgt diesen Ansatz auf Herzerkrankungen, um allgemeine Trends für die Modellselektion bei der Vorhersage von Krankheitswahrscheinlichkeiten zu identifizieren.
+🧾 1. Zusammenfassung (Abstract)
 
-1. Einleitung
+Das Projekt AI-Heart-Desease untersucht systematisch die Eignung unterschiedlicher prädiktiver Modellierungsansätze zur Klassifikation und Analyse von Ursachen von Herzerkrankungen. Der Fokus liegt auf dem Vergleich zwischen zufallsbasierten (randomisierten) Modellen und neuronalen Netzwerken als generative Modelle.
 
-Herzerkrankungen zählen weltweit zu den häufigsten Todesursachen und stellen eine zentrale Herausforderung für medizinische Diagnostik und Prävention dar. Mit der zunehmenden Verfügbarkeit klinischer und demografischer Daten gewinnen Methoden des maschinellen Lernens zunehmend an Bedeutung.
+Basierend auf früheren Erkenntnissen aus der Analyse psychologischer Erkrankungen wird überprüft, ob auch bei Herzerkrankungen eine komplementäre Leistungsfähigkeit dieser Modellklassen existiert. Ziel ist es, allgemeine Kriterien für eine fundierte Modellselektion in der medizinischen Risiko- und Wahrscheinlichkeitsvorhersage abzuleiten.
 
-Die Vorhersageleistung solcher Modelle hängt jedoch stark von den zugrunde liegenden Annahmen und Induktionsprinzipien ab. Frühere Studien im Bereich psychologischer Erkrankungen zeigen, dass unterschiedliche Krankheitsbilder unterschiedliche Modellparadigmen erfordern. Dieses Projekt untersucht, ob sich ein ähnliches Verhalten bei Herzerkrankungen beobachten lässt.
+🎯 2. Projektziele
 
-2. Projektziele
+📊 Statistische Analyse von Ursachen und Risikofaktoren von Herzerkrankungen
 
-Die zentralen Ziele des Projekts sind:
+🧠 Entwicklung neuronaler Netzwerke zur generativen Mustererkennung
 
-Statistische Analyse von Ursachen von Herzerkrankungen in Abhängigkeit von Patientenklassifikationen.
+🎲 Einsatz von Zufalls- und Baseline-Modellen als Referenz
 
-Entwicklung und Vergleich prädiktiver Modelle basierend auf:
+📈 Untersuchung der Skalierung der Vorhersagegenauigkeit
 
-Zufalls- und Baseline-Modellen.
+🔄 Vergleich mit Ergebnissen aus psychologischen Krankheitsmodellen
 
-Neuronalen Netzwerken als generative Modelle.
+🧭 Ableitung allgemeiner Modellselektionsstrategien
 
-Untersuchung der Skalierung der Klassifikationsgenauigkeit in Abhängigkeit vom Modelltyp.
+🗂️ 3. Datenbasis und Merkmalsgruppen
+📁 Datentypen
 
-Vergleich der Ergebnisse mit früheren Studien zu psychologischen Erkrankungen.
+👤 Demografie (Alter, Geschlecht)
 
-Ableitung allgemeiner Richtlinien zur Modellselektion in der medizinischen Risikoabschätzung.
+❤️ Physiologie (Blutdruck, Cholesterin, Herzfrequenz)
 
-3. Datenbasis und Merkmale
+🚬 Lebensstil (Rauchen, Aktivität, Ernährung)
 
-Die Analyse basiert auf strukturierten Patientendaten, wie sie typischerweise in der Herzmedizin verwendet werden:
+🏥 Klinische Parameter und Diagnosen
 
-Demografische Merkmale (z. B. Alter, Geschlecht)
+⚙️ Vorverarbeitung
 
-Physiologische Messwerte (z. B. Blutdruck, Cholesterin)
+Normalisierung numerischer Werte
 
-Lebensstil- und Risikofaktoren (z. B. Rauchen, körperliche Aktivität)
+Umgang mit fehlenden Daten
 
-Klinische Diagnoseparameter
+Kodierung kategorialer Merkmale
 
-Die Datenvorverarbeitung umfasst Normalisierung, Umgang mit fehlenden Werten sowie Kodierung kategorialer Merkmale.
+🧩 4. Modellarchitekturen
+🎲 4.1 Zufalls- und Baseline-Modelle
 
-4. Modellierungsansätze
-4.1 Zufalls- und Baseline-Modelle
+Zufallsmodelle dienen als statistische Nullhypothese:
 
-Zufallsmodelle dienen als statistische Referenz und beinhalten:
-
-Zufällige Klassifikation basierend auf Klassenverteilungen
+Zufällige Klassifikation unter Berücksichtigung der Klassenverteilung
 
 Einfache probabilistische Modelle mit minimalen Annahmen
 
-Diese Modelle ermöglichen eine Einschätzung, ob Krankheitsmuster stark verrauscht oder nur schwach strukturiert sind.
+➡️ Ziel: Bewertung, ob Krankheitsmuster signifikant über Zufall hinausgehen.
 
-4.2 Neuronale Netzwerke
+🧠 4.2 Neuronale Netzwerke (Generative Modelle)
 
-Neuronale Netzwerke werden als generative Modelle eingesetzt und zeichnen sich aus durch:
+Neuronale Netze modellieren komplexe Abhängigkeiten:
 
-Erlernen nichtlinearer Zusammenhänge
+Nichtlineare Feature-Interaktionen
 
-Modellierung komplexer Interaktionen zwischen Risikofaktoren
+Latente Repräsentationen von Risikofaktoren
 
-Adaptive Repräsentationsbildung während des Trainings
+Adaptive Gewichtsanpassung durch Training
 
-Zur Vermeidung von Überanpassung werden Regularisierungs- und Validierungsstrategien eingesetzt.
+➡️ Einsatz von Regularisierung und Validierung zur Vermeidung von Overfitting.
 
-5. Evaluationsstrategie
+📏 5. Evaluationsmethoden
+📊 Metriken
 
-Die Bewertung der Modelle erfolgt anhand etablierter Klassifikationsmetriken:
+✔️ Genauigkeit (Accuracy)
 
-Genauigkeit (Accuracy)
+🎯 Präzision & Recall
 
-Präzision und Recall
+🧮 F1-Score
 
-F1-Score
+🔀 Konfusionsmatrix
 
-Konfusionsmatrizen
+🔁 Validierung
 
-Zur Sicherstellung der Robustheit wird Kreuzvalidierung eingesetzt. Ein besonderer Fokus liegt auf dem relativen Leistungsvergleich zwischen Zufalls- und neuronalen Modellen.
+Kreuzvalidierung
 
-6. Vorläufige Ergebnisse
+Analyse der Stabilität über Subgruppen
 
-Erste Auswertungen zeigen:
+🔍 6. Vorläufige Ergebnisse
 
-Zufalls- und neuronale Modelle erreichen selten gleichzeitig hohe Genauigkeiten.
+❌ Zufalls- und neuronale Modelle erzielen selten gleichzeitig hohe Genauigkeiten
 
-Bestimmte Herzerkrankungen werden durch neuronale Netze deutlich besser erfasst.
+🧠 Strukturierte Krankheitsbilder profitieren stark von neuronalen Netzen
 
-Andere Klassifikationen zeigen nur geringe Verbesserungen gegenüber Zufallsmodellen.
+🎲 Andere Klassen zeigen nur geringe Abweichung von Zufallsmodellen
 
-Dies deutet auf unterschiedliche Grade struktureller Vorhersagbarkeit innerhalb der Herzerkrankungen hin.
+➡️ Hinweis auf unterschiedliche Grade struktureller Vorhersagbarkeit.
 
-7. Diskussion
+💬 7. Diskussion
 
-Die Ergebnisse unterstützen die Hypothese, dass Krankheitsursachen grob in zwei Kategorien eingeteilt werden können:
+Die Ergebnisse legen nahe, Herzerkrankungen nach ihrer Modellierbarkeit zu unterscheiden:
 
-Zufallsdominierte Ursachen mit geringer struktureller Abhängigkeit von beobachtbaren Merkmalen.
+🎲 Zufallsdominierte Erkrankungen – hohe Heterogenität, geringe Struktur
 
-Generativ-dominierte Ursachen, bei denen komplexe Wechselwirkungen eine zentrale Rolle spielen.
+🧠 Generativ-dominierte Erkrankungen – komplexe, aber lernbare Muster
 
-Für medizinische KI-Systeme ergibt sich daraus die Notwendigkeit einer adaptiven Modellwahl.
+➡️ Konsequenz: adaptive und krankheitsspezifische Modellwahl.
 
-8. Fazit und Ausblick
+🚀 8. Fazit und Ausblick
 
-Das Projekt AI-Heart-Desease zeigt, dass die Modellselektion entscheidend für die Qualität medizinischer Vorhersagen ist. Ähnlich wie bei psychologischen Erkrankungen weisen auch Herzerkrankungen unterschiedliche Eignungen für zufallsbasierte oder neuronale Modelle auf.
+Das Projekt bestätigt, dass Modellselektion ein kritischer Faktor in medizinischer KI ist. Eine pauschale Anwendung neuronaler Netze ist nicht immer optimal.
 
-Zukünftige Arbeiten werden sich auf größere Datensätze, hybride Modellansätze und eine stärkere Interpretierbarkeit der Modelle konzentrieren.
+🔮 Zukünftige Arbeiten
 
-Schlüsselwörter
+Erweiterung der Datensätze
 
-Herzerkrankungen, Maschinelles Lernen, Neuronale Netze, Zufallsmodelle, Modellselektion, Medizinische KI
+Hybride und Ensemble-Modelle
 
-9. Ressourcen, Links und Projekt-Assets
+Verbesserte Interpretierbarkeit (Explainable AI)
 
-🔗 Projekt-Repository (GitHub)
-https://github.com/your-org/AI-Heart-Desease
+🏷️ Schlüsselwörter
 
-📊 Referenzdatensätze
+Herzerkrankungen · Maschinelles Lernen · Neuronale Netze · Zufallsmodelle · Medizinische KI
+
+🔗 9. Ressourcen & Links
+📂 Code & Projekt
+
+GitHub: https://github.com/your-org/AI-Heart-Desease
+
+📊 Datensätze
 
 UCI Heart Disease Dataset: https://archive.ics.uci.edu/ml/datasets/Heart+Disease
 
 Kaggle Heart Disease Dataset: https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
 
-📚 Medizinische und wissenschaftliche Quellen
+📚 Medizinische Quellen
 
-Weltgesundheitsorganisation (WHO) – Herz-Kreislauf-Erkrankungen: https://www.who.int/health-topics/cardiovascular-diseases
+WHO – Herz-Kreislauf-Erkrankungen: https://www.who.int/health-topics/cardiovascular-diseases
 
 American Heart Association: https://www.heart.org/
 
-🧠 Machine-Learning-Frameworks
+🧠 ML-Frameworks
 
 TensorFlow: https://www.tensorflow.org/
 
@@ -136,29 +145,25 @@ PyTorch: https://pytorch.org/
 
 Scikit-learn: https://scikit-learn.org/
 
-🌐 Projekt-Webpräsenz
-Projekt-Webseite: https://ai-heart-desease.example.com
+🎨 10. Icons & Favicon-Konzept
+❤️🧠 Projekt-Icon
 
-10. Icons und visuelle Identität
+Herzform mit integrierten neuronalen Knoten
 
-❤️ Projekt-Icon (Konzept): Herzsymbol kombiniert mit neuronalen Netzwerkknoten
-🧠 KI-Symbol: Gehirn / neuronales Netzwerk
-📈 Analyse-Symbol: Statistikdiagramm oder EKG-Wellenform
+Farbkonzept: Rot (Medizin) + Blau (KI)
 
-Empfohlene Favicon-Formate:
+📐 Empfohlene Favicon-Dateien
 
 favicon.ico (16×16, 32×32)
 
-favicon.png (64×64, 128×128)
+favicon-32x32.png
+
+favicon-192x192.png
 
 apple-touch-icon.png (180×180)
 
-Favicon-Generatoren:
+🛠️ Favicon-Generatoren
 
 https://favicon.io/
 
 https://realfavicongenerator.net/
-
-
-
-
